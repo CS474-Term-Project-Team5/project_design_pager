@@ -1,0 +1,20 @@
+The Bag of Words approach is a quantifying method of data by fucussing on the frequency of each words without considering the sequence of words. Generating a dictionary with tokenized Keywords and Named Entity, convert to a vector according to the frequency of each index. The pros and cons of that method are as follows.
+
+\begin{center}
+    \begin{tabularx}{\textwidth} { 
+      | >{\centering\arraybackslash}X 
+      | >{\centering\arraybackslash}X | }
+        \hline
+        Pros & Cons\\
+        \hline
+        {\begin{itemize}
+            \item Easy to embedding
+            \item Possible to embed words with Keywords and Named Entity
+        \end{itemize}} &
+        {\begin{itemize}
+            \item Can't use similar words or Named Entity in embedding process
+            \item Low weight for an important word whose frequency is small
+        \end{itemize}}\\
+        \hline
+    \end{tabularx}
+\end{center}

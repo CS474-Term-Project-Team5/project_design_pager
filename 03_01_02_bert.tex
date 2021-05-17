@@ -1,0 +1,25 @@
+Another way of embedding method is well-performed pre-trained model  in NLP tasks. For input vector for BERT, use special vector composed with concatenation with Keywords and Named Entity. By using the ouput of this method, there are two main method for processing.
+\begin{enumerate}
+    \item using vectors from [CLS] token
+    \item using vectors which are the average of whole embedding value.
+\end{enumerate}
+The pros and cons of that method are as follows.
+
+\begin{center}
+    \begin{tabularx}{\textwidth} { 
+      | >{\centering\arraybackslash}X 
+      | >{\centering\arraybackslash}X | }
+        \hline
+        Pros & Cons\\
+        \hline
+        {\begin{itemize}
+            \item Good performance in NLP tasks
+            \item Possible to use similar words
+        \end{itemize}} &
+        {\begin{itemize}
+            \item Loss of meaning of a word which is OOV
+            \item High cost(time)
+        \end{itemize}}\\
+        \hline
+    \end{tabularx}
+\end{center}

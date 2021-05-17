@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{cleveref}
+\usepackage{array}
+\usepackage{tabularx}
+
+\title{CS474 Term Project Design}
+\author{Sukmin Cho, Jaegoo Jho, Beomsuk Cho}
+\date{Team 5}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\input{01_introduction}
+
+\section{Data Preprocessing}
+\input{02_data_preprocessing}
+\subsection{Keyword Extraction}
+\input{02_01_keyword_extraction}
+\subsection{NER tagging}
+\input{02_02_ner_tagging}
+
+\section{First Clustering}
+\input{03_first_clustering}
+\subsection{Embedding Method}
+\input{03_01_embedding_method}
+\subsubsection{Bag of Words}
+\input{03_01_01_bag_of_words}
+\subsubsection{BERT}
+\input{03_01_02_bert}
+\subsubsection{Mixture}
+\input{03_01_03_mixture}
+\subsection{Clustering}
+\input{03_02_clustring}
+\subsubsection{Hierarchical Document Clustering}
+\input{03_02_01_hierarchical_documnet_clustering}
+\subsubsection{K-means}
+\input{03_02_02_k_means}
+\subsubsection{DBSCAN}
+\input{03_02_03_dbscan}
+
+\section{Issue Trend Analysis}
+\input{04_issue_trend_analysis}
+
+\section{Second Clustering}
+\input{05_second_clustering}
+\subsection{Embedding}
+\input{05_01_embedding}
+\subsection{Topic Modeling}
+\subsubsection{LDA}
+\input{05_02_topic_modeling}
+\subsubsection{BERT: Top2Vec}
+\input{05_02_bert}
+
+\section{Issue Tracking}
+\input{06_issue_tracking}
+\subsection{On-issue Event Tracking}
+\input{06_01_on_issue_event_tracking}
+\subsection{Related Issue Event Tracking}
+\input{06_02_related_issue_event_tracking}
+
+\section{Conclusion}
+\input{07_conclusion}
+
+\end{document}

@@ -1,0 +1,8 @@
+The Name Entity usually means the set of person or organization in given text data. Each article has its own Name Entities and these are consider important words in the article. But those words are excluded in Keyword Extraction process. The NER tagging will be proceeded independently. For NER tagging, we use the tool "spaCy" which proceeds based on pre-trained models for English, English multi-task CNN trained on OntoNotes.
+\begin{figure*}[htp]
+    \centering            
+    \includegraphics[width=\textwidth]{02_02_ner_tagging.png} 
+    \caption{The process of NER tagging} 
+    \label{fig:NER tagging} 
+\end{figure*}\\
+In the figure above, the most right box is our test results of NER tagging. Especially, Name Entity list whose label is person and organization will be used in Embedding 
